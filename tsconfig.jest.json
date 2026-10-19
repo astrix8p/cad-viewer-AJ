@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mlightcad/cad-simple-viewer": [
+        "packages/cad-simple-viewer/src/index.ts"
+      ],
+      "@mlightcad/cad-simple-viewer/find": [
+        "packages/cad-simple-viewer/src/find/index.ts"
+      ]
+    },
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": [
+    "jest.config.ts",
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ]
+}
